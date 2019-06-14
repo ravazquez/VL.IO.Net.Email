@@ -14,7 +14,7 @@ vvvv demo patches can be found here:
 
     "X:\libs.VL\VL.Net.Email\vvvv\girlpower\"
 
-## Cloning the repository
+### Cloning the repository
 If you want to contribute to this repository, clone it into a directory like:
  
     X:\vl-libs\VL.Net.Email
