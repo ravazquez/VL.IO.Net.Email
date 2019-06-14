@@ -1,0 +1,5 @@
+/src/obj/
+/src/.vs/
+/.vs/
+*~.xml
+/lib/
