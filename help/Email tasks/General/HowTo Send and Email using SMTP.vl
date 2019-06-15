@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="KbFsC218ljINvE7Vk24jJ5" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
+  <NugetDependency Id="VNWfpJD4u3tMALuHmDwjVz" Location="VL.CoreLib" Version="2019.1.0-273" />
+  <Patch Id="QEwkVa5QmK2LWibw6J5Zuf">
+    <Canvas Id="SEMG1pZiFXJNnMFgVYUAC1" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="OwzGP4ql0qPMxc7ZoMHMwe">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RHJp4ukqHB8QEevuGgxNZI">
+        <Canvas Id="O4x4YJPzXLIOjLtSen2EmB" CanvasType="Group">
+          <Node Bounds="55,726,245,19" Id="AoLPoqrYOcYPjqZ12NpBLe">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.IO.Net.Email.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SendEmail" />
+            </p:NodeReference>
+            <Pin Id="GadG9iDLdACNerKk45mZS6" Name="Host" Kind="InputPin" />
+            <Pin Id="OJg70kOSNDHPB0r8oTGu5H" Name="Port" Kind="InputPin" />
+            <Pin Id="UTKNSQFRkcoNLHpU9SEMei" Name="User Name" Kind="InputPin" />
+            <Pin Id="TnpCQOCCjF3NGdbEjUkQHM" Name="Password" Kind="InputPin" />
+            <Pin Id="Bjn2TkoHEj9QG3jHGTLmYc" Name="Use SSL" Kind="InputPin" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="DjYTBqZhfTnLpz0v4FDJZC" Name="From" Kind="InputPin" />
+            <Pin Id="R3nVAbTdGoaNInaslv15Pv" Name="To" Kind="InputPin" />
+            <Pin Id="H43LD4p7V91QJIIOgrZYN3" Name="Subject" Kind="InputPin" />
+            <Pin Id="PrQG2SL3GQVNBHdsrngQQm" Name="Message" Kind="InputPin" />
+            <Pin Id="LHsP85v39TlN1KUFgvuXLd" Name="Email Encoding" Kind="InputPin" />
+            <Pin Id="TSiP39mzrZgOtUX1qT7vX1" Name="Accept HTML" Kind="InputPin" />
+            <Pin Id="U1UgHgoRCCRLUzseLHRoL8" Name="Attachments" Kind="InputPin" />
+            <Pin Id="IWsoPhWKwUGQStybGnUgNy" Name="Send" Kind="InputPin" />
+            <Pin Id="DvDV4PnhwziN1bSMpJKjSu" Name="Success" Kind="OutputPin" />
+            <Pin Id="K2M1C24MaGTObGR8tp30uB" Name="Error" Kind="OutputPin" />
+            <Pin Id="EaNZTbRmqHpQUfbgnmaK7B" Name="Error Message" Kind="OutputPin" />
+          </Node>
+          <Pad Id="BG5V34KcCZyMZLFtrY9Wkh" Comment="Host" Bounds="55,85,96,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QzndhqHhcYZNfgKL5UfXOD" Comment="Port" Bounds="77,118,35,15" ShowValueBox="true" isIOBox="true" Value="587">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="VZz9jBqNUPBLOUGTyyVzeG" Comment="User Name" Bounds="95,148,120,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="L5nitZTFCItMg2DfYvTLlK" Comment="Password" Bounds="116,180,157,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="NhdvexUtNSHOtBqiWbiYVf" Comment="From" Bounds="156,258,142,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="TvQrirzftTnQYpVN0pAD52" Comment="To" Bounds="175,292,129,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="HXpAOPLYjp7MKIMkseeMG5" Comment="Subject" Bounds="196,321,181,15" ShowValueBox="true" isIOBox="true" Value="This is a test email sent from VL">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="GQ4UsYlNE7KP88cQeHGbU4" Comment="Message" Bounds="216,350,247,231" ShowValueBox="true" isIOBox="true" Value="&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;Example message&lt;/title&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;    &lt;body&gt;&#xD;&#xA;        &lt;table&gt;&#xD;&#xA;            &lt;tr&gt;&#xD;&#xA;                &lt;td&gt;&#xD;&#xA;                    Text within a cell&#xD;&#xA;                &lt;/td&gt;&#xD;&#xA;            &lt;/tr&gt;&#xD;&#xA;        &lt;/table&gt;&#xD;&#xA;        &lt;p&gt;A paragraph&lt;/p&gt;&#xD;&#xA;        &lt;a href=&quot;http://vvvv.org&quot;&gt;a link&lt;/a&gt;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="VHZX5oJ5vthMyRcdzflLsX" Comment="Send" Bounds="297,679,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UezNBBCrvdWQJiltsWq37P" Comment="Error Message" Bounds="297,776" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="I25gZEx7MheMa1TioGvu6G" Comment="Error" Bounds="177,822" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MKRrQRboigxMns79wTrBHD" Comment="Success" Bounds="57,822" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MAJJjWro8BrLMLeONcfsF0" Comment="Use SSL" Bounds="134,208,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="P1so7W6t6hoPIlNla58glO" Comment="Accept HTML" Bounds="257,596,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="VkRbOL9RtXXLhtzyofBac1" Bounds="541,210,366,19" ShowValueBox="true" isIOBox="true" Value="1. Fill in your SMTP's server and authentication information">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SXqpzA8ZOkiOHsXjimnN1c" Bounds="541,377,452,19" ShowValueBox="true" isIOBox="true" Value="2. Configure your recipient, subject and message (HTML or text)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RfPE2XU7loDLpZsLduB8Xp" Bounds="541,578,371,50" ShowValueBox="true" isIOBox="true" Value="3. Add any desired attachments as as Spread of strings each containing the path to the desired file">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IvK2Dy3wSCXMeizvsovLjF" Comment="Attachments" Bounds="548,641,205,17" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+              <Choice Kind="TypeFlag" Name="Sequence" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:Value />
+          </Pad>
+          <ControlPoint Id="SnB6zAryoHSL3UHaX6plyV" Bounds="276,650" />
+          <Pad Id="DqCVRBMtt4SN0Cg7QNVBIn" Bounds="544,691,158,19" ShowValueBox="true" isIOBox="true" Value="4. Send the message">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="I5Ck4tmBw1BMVimdg8ILWJ" Bounds="95,877,523,60" ShowValueBox="true" isIOBox="true" Value="5. Check the status output pins to determine if the email was sent sucessfully or an error was found, the Error Message output pin should provide more information in case of an error.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DIuwEHWCMPBPjHDLH3AdkE" Bounds="282,83,122,29" ShowValueBox="true" isIOBox="true" Value="SendEmail">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="MzazkElLMRAPTRNeyskF9B" Name="Create" />
+        <Patch Id="RASY4dMPpcsNZDOXWWzbO6" Name="Update" />
+        <ProcessDefinition Id="OOw9tO5sJtMOXNsj8aj76x">
+          <Fragment Id="QyCkHtXBMGhMiPG9aBkbJo" Patch="MzazkElLMRAPTRNeyskF9B" Enabled="true" />
+          <Fragment Id="IP3wlbzdQgaPwKsYKGUuic" Patch="RASY4dMPpcsNZDOXWWzbO6" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="JZ8FiDTGVN1ObLeajijSsw" Ids="BG5V34KcCZyMZLFtrY9Wkh,GadG9iDLdACNerKk45mZS6" />
+        <Link Id="KHr5BGO8YDnOQH0RyycxJz" Ids="QzndhqHhcYZNfgKL5UfXOD,OJg70kOSNDHPB0r8oTGu5H" />
+        <Link Id="D639eMwJHMFO2E3bRRxTJa" Ids="VZz9jBqNUPBLOUGTyyVzeG,UTKNSQFRkcoNLHpU9SEMei" />
+        <Link Id="R9oVRX6BlZoPAfsW9d0bFI" Ids="L5nitZTFCItMg2DfYvTLlK,TnpCQOCCjF3NGdbEjUkQHM" />
+        <Link Id="FVv9gaOSBLGO1VEz2he5ig" Ids="NhdvexUtNSHOtBqiWbiYVf,DjYTBqZhfTnLpz0v4FDJZC" />
+        <Link Id="OTP2aauAyWKPggq53Oa14x" Ids="TvQrirzftTnQYpVN0pAD52,R3nVAbTdGoaNInaslv15Pv" />
+        <Link Id="DYRETQ4ecnULmT7HXQtZ0C" Ids="HXpAOPLYjp7MKIMkseeMG5,H43LD4p7V91QJIIOgrZYN3" />
+        <Link Id="CvJShwXEr53OwggjNQx9yS" Ids="GQ4UsYlNE7KP88cQeHGbU4,PrQG2SL3GQVNBHdsrngQQm" />
+        <Link Id="FZcaGwbyGvpPmLlB31SCwF" Ids="VHZX5oJ5vthMyRcdzflLsX,IWsoPhWKwUGQStybGnUgNy" />
+        <Link Id="Qrp5wr1VNuuN79BhEletnE" Ids="EaNZTbRmqHpQUfbgnmaK7B,UezNBBCrvdWQJiltsWq37P" />
+        <Link Id="JWPFzHmMDswNM1ObmRQ0MH" Ids="K2M1C24MaGTObGR8tp30uB,I25gZEx7MheMa1TioGvu6G" />
+        <Link Id="PiPhxCI4rmiO23agVkPbNY" Ids="DvDV4PnhwziN1bSMpJKjSu,MKRrQRboigxMns79wTrBHD" />
+        <Link Id="K9hCBe5nVyHPf8GHnXn4Rq" Ids="MAJJjWro8BrLMLeONcfsF0,Bjn2TkoHEj9QG3jHGTLmYc" />
+        <Link Id="EHoHoeg7PEzP6R84LXWgYv" Ids="P1so7W6t6hoPIlNla58glO,TSiP39mzrZgOtUX1qT7vX1" />
+        <Link Id="H5MvZ4wUTP6LapUzWBeDpF" Ids="IvK2Dy3wSCXMeizvsovLjF,SnB6zAryoHSL3UHaX6plyV,U1UgHgoRCCRLUzseLHRoL8" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="I7BawNKVYGiNq8fXGvEAAd" Location="VL.Skia" Version="2019.1.0-0242-gf587b4c0f7" />
+  <NugetDependency Id="CYZlcj3on7WNDoAhxvnAx3" Location="VL.OpenCV" Version="0.0.0.0" />
+  <DocumentDependency Id="Hit5Jdbztu6PVm4NV94BIF" Location="../../../VL.IO.Net.Email.vl" />
+</Document>
