@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="C:\libs.VL\VL.Net.Email\vvvv\girlpower\ListEmails (help).v4p" systemname="ListEmails (help)" filename="C:\libs.VVVV\YR\Plugins\Net\vvvv\girlpower\ListEmails (help).v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="C:\libs.VL\VL.IO.Net.Email\vvvv\girlpower\ListEmails (help).v4p" systemname="ListEmails (help)" filename="C:\libs.VVVV\YR\Plugins\Net\vvvv\girlpower\ListEmails (help).v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="12468" top="192" width="20256" height="15132">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1.1">
@@ -496,7 +496,7 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="ListEmails (Email)" filename="C:\libs.VL\VL.Net.Email\vvvv\girlpower\vl\VVVV.Email.VVVV.VL.Net.Email.vl" nodename="ListEmails (Email.VVVV.VL.Net.Email)" componentmode="Hidden" id="159">
+   <NODE id="159" systemname="ListEmails (Email)" filename="C:\libs.VL\VL.Net.Email\vvvv\girlpower\vl\VVVV.Email.VVVV.VL.Net.Email.vl" nodename="ListEmails (Email.VVVV.VL.Net.Email)" componentmode="Hidden">
    <BOUNDS type="Node" left="735" top="5415" width="7935" height="270">
    </BOUNDS>
    <PIN pinname="Filter" visible="1">
@@ -534,40 +534,16 @@
    <PIN pinname="Attachments" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="102" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Filter">
-   </LINK>
-   <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Update">
-   </LINK>
-   <LINK srcnodeid="101" srcpinname="Output String" dstnodeid="159" dstpinname="Filter Value">
-   </LINK>
-   <LINK srcnodeid="100" srcpinname="Output String" dstnodeid="159" dstpinname="Filter By">
-   </LINK>
-   <LINK srcnodeid="85" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Count">
-   </LINK>
-   <LINK srcnodeid="35" srcpinname="Output String" dstnodeid="159" dstpinname="Password">
-   </LINK>
-   <LINK srcnodeid="36" srcpinname="Output String" dstnodeid="159" dstpinname="User Name">
-   <LINKPOINT x="3390" y="2340">
+   <LINK srcnodeid="159" srcpinname="Success" dstnodeid="137" dstpinname="Input 1" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="7245" y="5738">
+   </LINKPOINT>
+   <LINKPOINT x="9990" y="5738">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="84" srcpinname="Output Enum" dstnodeid="159" dstpinname="Options">
-   </LINK>
-   <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Port">
-   </LINK>
-   <LINK srcnodeid="38" srcpinname="Output String" dstnodeid="159" dstpinname="Host">
-   </LINK>
-   <LINK srcnodeid="159" srcpinname="Error Message" dstnodeid="127" dstpinname="Input String">
-   </LINK>
-   <LINK srcnodeid="159" srcpinname="Error" dstnodeid="128" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="159" srcpinname="Success" dstnodeid="129" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="159" srcpinname="From" dstnodeid="97" dstpinname="Input String" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="159" srcpinname="Subject" dstnodeid="92" dstpinname="Input String" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="2190" y="6510">
+   <LINK srcnodeid="159" srcpinname="Attachments" dstnodeid="116" dstpinname="Data" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="765" y="5805">
    </LINKPOINT>
-   <LINKPOINT x="765" y="6510">
+   <LINKPOINT x="9120" y="5805">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="159" srcpinname="Body" dstnodeid="98" dstpinname="Input String" linkstyle="VHV" hiddenwhenlocked="1">
@@ -576,16 +552,40 @@
    <LINKPOINT x="765" y="7170">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="159" srcpinname="Attachments" dstnodeid="116" dstpinname="Data" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="5055" y="5880">
+   <LINK srcnodeid="159" srcpinname="Subject" dstnodeid="92" dstpinname="Input String" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="2190" y="6510">
    </LINKPOINT>
-   <LINKPOINT x="9120" y="5880">
+   <LINKPOINT x="765" y="6510">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="159" srcpinname="Success" dstnodeid="137" dstpinname="Input 1" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="7245" y="5738">
+   <LINK srcnodeid="159" srcpinname="From" dstnodeid="97" dstpinname="Input String" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="159" srcpinname="Success" dstnodeid="129" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="159" srcpinname="Error" dstnodeid="128" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="159" srcpinname="Error Message" dstnodeid="127" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output String" dstnodeid="159" dstpinname="Host">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Port">
+   </LINK>
+   <LINK srcnodeid="84" srcpinname="Output Enum" dstnodeid="159" dstpinname="Options">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output String" dstnodeid="159" dstpinname="User Name">
+   <LINKPOINT x="3390" y="2340">
    </LINKPOINT>
-   <LINKPOINT x="9990" y="5738">
-   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Output String" dstnodeid="159" dstpinname="Password">
+   </LINK>
+   <LINK srcnodeid="85" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Count">
+   </LINK>
+   <LINK srcnodeid="100" srcpinname="Output String" dstnodeid="159" dstpinname="Filter By">
+   </LINK>
+   <LINK srcnodeid="101" srcpinname="Output String" dstnodeid="159" dstpinname="Filter Value">
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Update">
+   </LINK>
+   <LINK srcnodeid="102" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Filter">
    </LINK>
    </PATCH>
