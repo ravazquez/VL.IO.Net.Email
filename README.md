@@ -5,10 +5,16 @@ Both SendEmail nodes use the standard System.Net API and support only SMTP.
 
 ListEmails uses [MailKit and MimeKit](http://www.mimekit.net/) and currently supports only POP3.
 
+ListEmails assumes all attachments are image attachments and tries to parse their content as such.
+
 ## Using the library
 In order to use this library with vl you have to clone this repository and build the Visual Studio 21017 solution as described below.
 
-After building you can just reference X:\libs.VL\VL.Net.IO.Email\VL.Net.IO.Email.vl in your VL document and use the nodes.
+After building you can just reference "X:\libs.VL\VL.Net.IO.Email\VL.Net.IO.Email.vl" in your VL document and use the nodes.
+
+VL help patches can be found here:
+
+    "X:\libs.VL\VL.Net.IO.Email\help\Email tasks\"
 
 vvvv demo patches can be found here:
 
