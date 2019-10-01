@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Cr4RfERcIRcNPpX8tIC6Pg" LanguageVersion="2019.1.0-0654-gaf14329ad1" Version="0.128">
+<Document xmlns:p="property" Id="Cr4RfERcIRcNPpX8tIC6Pg" Version="0.94">
   <NugetDependency Id="EzqiUxfrd3RMePeDPWTvqB" Location="VL.CoreLib" Version="2019.1.0-398" />
   <Patch Id="MQWEcwOMqIoNUWLY4fL0SW">
     <Canvas Id="LBTMKaAgO02M0lGlQJhTsv" DefaultCategory="IO.Net.Email" CanvasType="FullCategory">
@@ -869,21 +869,21 @@
           <Patch Id="U4a0fC09dk9NDRgAR17rx8" Name="Create" />
           <Patch Id="RyvKUWXChEtOAVy6gQZYHr" Name="Update">
             <Pin Id="PwHC96LlB4nLPYUf1k6AvB" Name="Host" Kind="InputPin" />
+            <Pin Id="CRHr4f0Zkr7PYlvUVrLDe0" Name="Success" Kind="OutputPin" />
             <Pin Id="CHI1iuNQciIQTWXWJh6Yro" Name="Port" Kind="InputPin" />
             <Pin Id="P48mTJ4a0ZVLKsThKSEUP2" Name="User Name" Kind="InputPin" />
             <Pin Id="KMJM4ga1H6iNwYWRYxfkqI" Name="Password" Kind="InputPin" />
             <Pin Id="KkPsMr7nFVELx3buWOyKLs" Name="Use SSL" Kind="InputPin" />
             <Pin Id="UxJxn9KOxwRMxTujOwYaKi" Name="From" Kind="InputPin" />
             <Pin Id="IsKVahBpVZ5ObV6ZKZ6bQx" Name="To" Kind="InputPin" />
+            <Pin Id="EBFNr1HHbEJNSm1d9Qqtn5" Name="Error" Kind="OutputPin" />
             <Pin Id="DqonosDEbkbQdTwRO8hTwZ" Name="Subject" Kind="InputPin" />
             <Pin Id="GA7Ch9iuge5PYpSux6zMDd" Name="Message" Kind="InputPin" />
             <Pin Id="NcAodYTzPA2MvqyXEOKThr" Name="Email Encoding" Kind="InputPin" />
             <Pin Id="Lu2NhZYwnY5OsyMTETA3aB" Name="Accept HTML" Kind="InputPin" />
             <Pin Id="KKD8pBfL5XhPF6hFun2Rj7" Name="Attachments" Kind="InputPin" />
-            <Pin Id="PQuZ4NzLkxoNG2wKX6Qnrg" Name="Send" Kind="InputPin" />
-            <Pin Id="CRHr4f0Zkr7PYlvUVrLDe0" Name="Success" Kind="OutputPin" />
-            <Pin Id="EBFNr1HHbEJNSm1d9Qqtn5" Name="Error" Kind="OutputPin" />
             <Pin Id="Ek6wo7EfF2zNyRlvOsxUvc" Name="Error Message" Kind="OutputPin" />
+            <Pin Id="PQuZ4NzLkxoNG2wKX6Qnrg" Name="Send" Kind="InputPin" />
           </Patch>
           <ProcessDefinition Id="C7xUtUzx7QRNwco5VDsL2t">
             <Fragment Id="Gildf2dkK5ePIFY6b0ogGq" Patch="U4a0fC09dk9NDRgAR17rx8" Enabled="true" />
@@ -1825,16 +1825,16 @@
             </Pad>
             <ControlPoint Id="UF1FpCjuruzO9Ct8DzLl3Z" Bounds="344,2451" />
             <ControlPoint Id="QnOC61f0PkeMMIi4O9jIms" Bounds="780,125" />
-            <Node Bounds="304,2067,58,19" Id="CcFLzopFA0AMq2HAoN6nHJ">
+            <Node Bounds="304,2072,55,20" Id="PrIwC3QhpIXLiF4IFXWZ27">
               <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Switch" />
                 <CategoryReference Kind="Category" Name="Control" NeedsToBeDirectParent="true" />
               </p:NodeReference>
-              <Pin Id="RTSP4KBznclOKdULMnBi5g" Name="Index" Kind="InputPin" />
-              <Pin Id="BfYctG8e4AWQcq6GBtYKSL" Name="Input" Kind="InputPin" />
-              <Pin Id="JKt9XzUG1KfNGlZHLXaan4" Name="Input 2" Kind="InputPin" />
-              <Pin Id="QlFOnY4mbgLPH3SY5zcqyE" Name="Output" Kind="OutputPin" />
+              <Pin Id="Sf4cVbkeMQHMAQWIOpUpMU" Name="Condition" Kind="InputPin" />
+              <Pin Id="Q84QTlf5IL6OcY2PW4UrXI" Name="False" Kind="InputPin" />
+              <Pin Id="PXZ6uwavmIQQKDtO54wfTQ" Name="True" Kind="InputPin" />
+              <Pin Id="Vua3IXe5eplOGb5L2S4UBZ" Name="Output" Kind="OutputPin" />
             </Node>
           </Canvas>
           <Patch Id="S3mPRmMx6qDQUwXG7tD2Hk" Name="Create" />
@@ -1856,16 +1856,16 @@
             <Pin Id="ALplwrLhpUGMam3tal7Ono" Name="Filter By" Kind="InputPin" Bounds="997,54" />
             <Pin Id="TIjmodp9FqALIkOpto7ePt" Name="Filter Value" Kind="InputPin" />
             <Pin Id="ND6XoB5mjEEOYirc9VkaiU" Name="Filter" Kind="InputPin" />
-            <Pin Id="LDdToDQGgHfPbkM0ZEdXyO" Name="Update" Kind="InputPin" />
             <Pin Id="AgAjAJ9dCINMG3wDPAmwth" Name="Ignore Filter Case" Kind="InputPin" />
+            <Pin Id="LDdToDQGgHfPbkM0ZEdXyO" Name="Update" Kind="InputPin" />
             <Pin Id="TlAcUOSn52sM5ZMKJgEoua" Name="From" Kind="OutputPin" Bounds="529,518" />
             <Pin Id="Uer0U5Ffc8ZN4BA9Epb9pP" Name="Subject" Kind="OutputPin" Bounds="605,526" />
             <Pin Id="De7iaJluQDLOMDpG2yHioM" Name="Body" Kind="OutputPin" Bounds="765,533" />
             <Pin Id="GICSMPsLeRsNdM5DGYyKEk" Name="Attached Images" Kind="OutputPin" Bounds="1274,1134" />
+            <Pin Id="S36hLVx07Z6OwGdajzQ1lq" Name="Embedded Images" Kind="OutputPin" Bounds="404,2797" />
             <Pin Id="RPghtDX1kfGQSZUrI12z2a" Name="Success" Kind="OutputPin" Bounds="-362,609" />
             <Pin Id="NsuhaNZE9KZOFqDhGIJZED" Name="Error" Kind="OutputPin" Bounds="-182,529" />
             <Pin Id="JRgk8F66xu0M2pbyDg7go8" Name="Error Message" Kind="OutputPin" Bounds="-229,580" />
-            <Pin Id="S36hLVx07Z6OwGdajzQ1lq" Name="Embedded Images" Kind="OutputPin" Bounds="404,2797" />
           </Patch>
           <ProcessDefinition Id="P48rJRJ1xMXQQFqwfYMfLs">
             <Fragment Id="NByW39I6b14L26VgxmjxJP" Patch="S3mPRmMx6qDQUwXG7tD2Hk" Enabled="true" />
@@ -2032,10 +2032,10 @@
           <Link Id="AzlIZkcjlJkNSxOmAkgSL4" Ids="C6ZMozNLpa8NWQjKHQolEE,BuNefeYa9KzL4tqy2dhg73" />
           <Link Id="Oq5Ot0KSOuZNu4CzMpoWw2" Ids="AgAjAJ9dCINMG3wDPAmwth,QnOC61f0PkeMMIi4O9jIms" IsHidden="true" />
           <Link Id="M8hVTeDFyEEPsxGguw7aj3" Ids="QnOC61f0PkeMMIi4O9jIms,La2pQwtfM8zN431Jnqs8wd" />
-          <Link Id="TAohKSNI02YNJbFfFJIhgN" Ids="HP6V0TpFZmmLdowaKGPJT6,RTSP4KBznclOKdULMnBi5g" />
-          <Link Id="FtqicJYgSXOQRleJMyQOI1" Ids="QlFOnY4mbgLPH3SY5zcqyE,HgPD8VBCa90Lhum0Z4YXqD" />
-          <Link Id="USBCM1GuLT2NB80qpSzR77" Ids="LvAHtizaBisMQERJYbaxBI,BfYctG8e4AWQcq6GBtYKSL" />
-          <Link Id="SvtZF8zrwekNLWmQZWmMSC" Ids="DWT0xkyVDxkPSTjaatZxOl,JKt9XzUG1KfNGlZHLXaan4" />
+          <Link Id="TahiMvQd62WMhLoXRDAHQV" Ids="Vua3IXe5eplOGb5L2S4UBZ,HgPD8VBCa90Lhum0Z4YXqD" />
+          <Link Id="LaPg3xYFVhBO3p9vxCG3np" Ids="HP6V0TpFZmmLdowaKGPJT6,Sf4cVbkeMQHMAQWIOpUpMU" />
+          <Link Id="REDwggOVni9OABAdrCdcgv" Ids="LvAHtizaBisMQERJYbaxBI,Q84QTlf5IL6OcY2PW4UrXI" />
+          <Link Id="Mo05UbQ2H4vO7OAPef6VOS" Ids="DWT0xkyVDxkPSTjaatZxOl,PXZ6uwavmIQQKDtO54wfTQ" />
         </Patch>
       </Node>
       <!--
@@ -2686,19 +2686,19 @@
             <Patch Id="A26dwUT1khxOQjWjiFaCYR" Name="Update">
               <Pin Id="SR8nUFuuKkSMQSUvYTAf72" Name="Update" Kind="InputPin" />
               <Pin Id="DBbFR5GGnokOLMdHAZdqeC" Name="Host" Kind="InputPin" Bounds="263,-95" />
+              <Pin Id="PKpZfLObKNVQdtfSBW4HRj" Name="Success Async" Kind="OutputPin" Bounds="-257,450" />
               <Pin Id="MRtbrfYBCSRP8Jhe8FTuQB" Name="Port" Kind="InputPin" Bounds="325,-95" />
               <Pin Id="OlNAoQCDu72P5P8ltUg0AX" Name="Options" Kind="InputPin" Bounds="387,-95" />
+              <Pin Id="PjQRKFuXnAjOqx04tLujg1" Name="Error Message Async" Kind="OutputPin" Bounds="-231,529" />
               <Pin Id="UlRpwrzLrTPPXpfYEDG75Q" Name="User Name" Kind="InputPin" Bounds="462,-91" />
               <Pin Id="VYelQyMRvMlOO8E7pZSaYW" Name="Password" Kind="InputPin" Bounds="567,-93" />
+              <Pin Id="NUwFMIZv59KMeRahVxlxLW" Name="Error Async" Kind="OutputPin" Bounds="-116,449" />
               <Pin Id="VuCGE9nfVMtPReq8nOfCVL" Name="Count" Kind="InputPin" />
               <Pin Id="PftwMCjIcdnMYtb9xzdTRJ" Name="Filter By" Kind="InputPin" Bounds="997,54" />
-              <Pin Id="G9Z22WmLXt3NYJXcz4eLLM" Name="Filter Value" Kind="InputPin" />
-              <Pin Id="ADfEUktWu1ZLIoPsie2oVH" Name="Filter" Kind="InputPin" />
-              <Pin Id="PKpZfLObKNVQdtfSBW4HRj" Name="Success Async" Kind="OutputPin" Bounds="-257,450" />
-              <Pin Id="PjQRKFuXnAjOqx04tLujg1" Name="Error Message Async" Kind="OutputPin" Bounds="-231,529" />
-              <Pin Id="NUwFMIZv59KMeRahVxlxLW" Name="Error Async" Kind="OutputPin" Bounds="-116,449" />
               <Pin Id="Ps2SmAAPBufPHEkqzQEa5S" Name="From Async" Kind="OutputPin" Bounds="-846,2034" />
+              <Pin Id="G9Z22WmLXt3NYJXcz4eLLM" Name="Filter Value" Kind="InputPin" />
               <Pin Id="MDY5NAh9GeFO3YbJarrgop" Name="Subject Async" Kind="OutputPin" Bounds="-754,2034" />
+              <Pin Id="ADfEUktWu1ZLIoPsie2oVH" Name="Filter" Kind="InputPin" />
               <Pin Id="II92SN2rm9DLX2FFcGsLjo" Name="Body Async" Kind="OutputPin" Bounds="-633,2034" />
             </Patch>
             <ProcessDefinition Id="M0K9pAwtxp2MG0LRjnvsYY">
