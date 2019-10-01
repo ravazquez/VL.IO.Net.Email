@@ -1,4 +1,4 @@
-﻿namespace VL.Net.Email
+﻿namespace VL.IO.Net.Email
 {
     public enum EmailEncoding
     {
