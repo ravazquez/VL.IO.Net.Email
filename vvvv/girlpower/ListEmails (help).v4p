@@ -1,10 +1,10 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
    <PATCH nodename="C:\libs.VL\VL.IO.Net.Email\vvvv\girlpower\ListEmails (help).v4p" systemname="ListEmails (help)" filename="C:\libs.VVVV\YR\Plugins\Net\vvvv\girlpower\ListEmails (help).v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="12468" top="192" width="20256" height="15132">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
-   <PACK Name="addonpack" Version="38.1.0">
+   <PACK Name="addonpack" Version="42.0.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="38" systemname="IOBox (String)">
    <BOUNDS type="Box" left="741" top="793" width="1833" height="234">
@@ -97,9 +97,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="85">
-   <BOUNDS type="Box" left="4661" top="3432" width="495" height="240">
+   <BOUNDS type="Box" left="4671" top="3432" width="495" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4661" top="3432" width="0" height="0">
+   <BOUNDS type="Node" left="4671" top="3432" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10">
    </PIN>
@@ -115,9 +115,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="87">
-   <BOUNDS type="Box" left="8604" top="4745" width="480" height="480">
+   <BOUNDS type="Box" left="8614" top="4745" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8604" top="4745" width="0" height="0">
+   <BOUNDS type="Node" left="8614" top="4745" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -129,7 +129,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Update">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Refresh">
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
@@ -185,9 +185,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="100">
-   <BOUNDS type="Box" left="5453" top="3432" width="793" height="234">
+   <BOUNDS type="Box" left="5463" top="3432" width="793" height="234">
    </BOUNDS>
-   <BOUNDS type="Node" left="5453" top="3432" width="0" height="0">
+   <BOUNDS type="Node" left="5463" top="3432" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
@@ -323,9 +323,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="126">
-   <BOUNDS type="Box" left="9990" top="6810" width="2288" height="234">
+   <BOUNDS type="Box" left="10090" top="6810" width="2288" height="234">
    </BOUNDS>
-   <BOUNDS type="Node" left="9990" top="6810" width="0" height="0">
+   <BOUNDS type="Node" left="10090" top="6810" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -457,16 +457,16 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="137" debug="0">
-   <BOUNDS type="Node" left="9990" top="5820" width="100" height="100">
+   <BOUNDS type="Node" left="10080" top="5820" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9990" top="5820" width="2600" height="2600">
+   <BOUNDS type="Box" left="10080" top="5820" width="2600" height="2600">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output 1" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="137" srcpinname="Output 1" dstnodeid="116" dstpinname="Do Upload">
+   <LINK srcnodeid="137" srcpinname="Output 1" dstnodeid="116" dstpinname="Do Upload" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="154">
    <BOUNDS type="Node" left="9384" top="10584" width="1116" height="240">
@@ -553,11 +553,13 @@
    </PIN>
    <PIN pinname="Ignore Filter Case" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Refresh" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="159" srcpinname="Success" dstnodeid="137" dstpinname="Input 1" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="7245" y="5738">
+   <LINKPOINT x="7272" y="5738">
    </LINKPOINT>
-   <LINKPOINT x="9990" y="5738">
+   <LINKPOINT x="10053" y="5738">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="159" srcpinname="Body" dstnodeid="98" dstpinname="Input String" linkstyle="VHV" hiddenwhenlocked="1">
@@ -675,9 +677,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="163">
-   <BOUNDS type="Box" left="13410" top="6810" width="2288" height="234">
+   <BOUNDS type="Box" left="13510" top="6810" width="2288" height="234">
    </BOUNDS>
-   <BOUNDS type="Node" left="13410" top="6810" width="0" height="0">
+   <BOUNDS type="Node" left="13510" top="6810" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -705,9 +707,11 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="137" srcpinname="Output 1" dstnodeid="165" dstpinname="Do Upload" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="10050" y="6173">
+   <LINKPOINT x="10113" y="6173">
    </LINKPOINT>
-   <LINKPOINT x="13410" y="6173">
+   <LINKPOINT x="13437" y="6173">
    </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="87" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Refresh">
    </LINK>
    </PATCH>

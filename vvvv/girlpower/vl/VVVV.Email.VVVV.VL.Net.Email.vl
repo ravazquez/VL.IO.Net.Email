@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" Version="0.94">
-  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="0.35.21" />
-  <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="0.35.21" />
+<Document xmlns:p="property" Id="GB2VxUl5VdhM5rsl5IbjQg" LanguageVersion="2021.3.3.131" Version="0.128">
+  <NugetDependency Id="RKFCmk1Lg5EP3I4IQegLTw" Location="VL.CoreLib" Version="2021.3.3" />
+  <NugetDependency Id="U2JwHqMJLyGLDs97lM6eZ6" Location="VL.CoreLib.VVVV" Version="42.0.0" />
   <Patch Id="Th8hpfHvBF4Lk6VOwDCc9D">
     <Canvas Id="NtZT52Xp5qNOXK0fF2H7kv" DefaultCategory="VVVV.Email" CanvasType="FullCategory">
       <!--
@@ -35,6 +35,7 @@
               <Pin Id="D4Z4bPbtWoZQWjRVQZrZbI" Name="Email Encoding" Kind="InputPin" />
               <Pin Id="CPq0XeGUVyRMpXZNThGppc" Name="Accept HTML" Kind="InputPin" />
               <Pin Id="QHXsYAyncpFP1CpBJbDVBI" Name="Attachments" Kind="InputPin" />
+              <Pin Id="VXDmlGLU3kkNRwfnUc0rWD" Name="Embedded Images" Kind="InputPin" />
               <Pin Id="PH1gZw0v92wMptQq8HvNLJ" Name="Send" Kind="InputPin" />
               <Pin Id="T9FA7HUG5zSMChbgY9QNyM" Name="Success" Kind="OutputPin" />
               <Pin Id="G5V1HfDaOuxNPfyvR8Xlyd" Name="Error" Kind="OutputPin" />
@@ -52,20 +53,18 @@
             <ControlPoint Id="IQ6YVQzRMyWLdI6WntqJ9K" Bounds="865,214" />
             <ControlPoint Id="G3YnCSV0TjYOropOPE9c7x" Bounds="965,214" />
             <ControlPoint Id="IHwMpWfgCgWMMbbMD0N7q0" Bounds="1056,214" />
-            <ControlPoint Id="Ds4TjSnCzZGOPJz72uF8lq" Bounds="1144,214" />
+            <ControlPoint Id="Ds4TjSnCzZGOPJz72uF8lq" Bounds="1249,214" />
             <ControlPoint Id="Ch1A7I3yzkoMqo2H048Kj1" Bounds="316,287" />
             <ControlPoint Id="MOrvEPWodt0LmY5KSdYsPc" Bounds="436,287" />
             <ControlPoint Id="AHKuWDEGg8MLvTWSWliB13" Bounds="556,287" />
+            <ControlPoint Id="JWBTesamSQ3NO9C6ASuZpf" Bounds="1137,214" />
           </Canvas>
           <Patch Id="Uirsq2uoQG4PKNI1moyje4" Name="Create" />
-          <Patch Id="TqQPypuMs2gM0X2EqeymMP" Name="Update">
+          <Patch Id="TqQPypuMs2gM0X2EqeymMP" Name="Update" ManuallySortedPins="true">
             <Pin Id="BEON5FuapKKNAmIIMdiArh" Name="Host" Kind="InputPin" />
-            <Pin Id="TEgkx4TOegUPkPyAL6ZAZw" Name="Success" Kind="OutputPin" />
             <Pin Id="FjUD55vJyyZMxY7mOjJiXk" Name="Port" Kind="InputPin" />
             <Pin Id="A0aGs519da5MKQ0CUxHTYl" Name="User Name" Kind="InputPin" />
-            <Pin Id="NaRovO1MIqNQTrPou4WfPi" Name="Error" Kind="OutputPin" />
             <Pin Id="S1GWj7stJrCNsoVlWnyRXG" Name="Password" Kind="InputPin" />
-            <Pin Id="KrJ9SSihMJYOCQtNmRzMGA" Name="Error Message" Kind="OutputPin" />
             <Pin Id="KrnaUNzpcCXPU7HyQmYSDu" Name="Use SSL" Kind="InputPin" />
             <Pin Id="M69ajPqIxNiMhCOWaTo9wR" Name="From" Kind="InputPin" />
             <Pin Id="Gw7SBTJ00CzMd9LdeGdjtB" Name="To" Kind="InputPin" />
@@ -74,7 +73,11 @@
             <Pin Id="UDsIW9EISpvNQzkOabSha6" Name="Email Encoding" Kind="InputPin" />
             <Pin Id="UsVwAlqnrHgLYJAymuOccg" Name="Accept HTML" Kind="InputPin" />
             <Pin Id="PSWDJq8WtMXMAPkfkMtbqi" Name="Attachments" Kind="InputPin" />
+            <Pin Id="TjI0WaHZLVfLzTukl2NBLw" Name="Embedded Images" Kind="InputPin" Bounds="1119,173" />
             <Pin Id="Pp5Uh5u6YfwOJgjqzYUVnI" Name="Send" Kind="InputPin" />
+            <Pin Id="TEgkx4TOegUPkPyAL6ZAZw" Name="Success" Kind="OutputPin" />
+            <Pin Id="NaRovO1MIqNQTrPou4WfPi" Name="Error" Kind="OutputPin" />
+            <Pin Id="KrJ9SSihMJYOCQtNmRzMGA" Name="Error Message" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="Q5TYaQkfEB1ONlKUF6F1Vn">
             <Fragment Id="I9YAFNad0liM0rdRBhMRe6" Patch="Uirsq2uoQG4PKNI1moyje4" Enabled="true" />
@@ -112,6 +115,8 @@
           <Link Id="LMRWVVFbdTpQHWGYxapPz7" Ids="G5V1HfDaOuxNPfyvR8Xlyd,MOrvEPWodt0LmY5KSdYsPc" />
           <Link Id="T28ejrgHDdULSNYcpa4ntd" Ids="AHKuWDEGg8MLvTWSWliB13,KrJ9SSihMJYOCQtNmRzMGA" IsHidden="true" />
           <Link Id="AebUwrWaFACMVIt4qhCCCI" Ids="Otab2wU3eBHL1xRvV4zImH,AHKuWDEGg8MLvTWSWliB13" />
+          <Link Id="GakkufWvCPYLc8g0qNv0nb" Ids="JWBTesamSQ3NO9C6ASuZpf,VXDmlGLU3kkNRwfnUc0rWD" />
+          <Link Id="ReXiDtoZlcSOnMmeohhY1H" Ids="TjI0WaHZLVfLzTukl2NBLw,JWBTesamSQ3NO9C6ASuZpf" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -143,7 +148,7 @@
               <Pin Id="EjMsez2Z00qNqTgolbDpFR" Name="Filter Value" Kind="InputPin" />
               <Pin Id="GUtp2QNKXSIMzaesDkHLUX" Name="Filter" Kind="InputPin" />
               <Pin Id="E40wOgu849gLOGdnqeH4cm" Name="Ignore Filter Case" Kind="InputPin" />
-              <Pin Id="RK8ZgDOOeqbOchV7mDfjB2" Name="Update" Kind="InputPin" />
+              <Pin Id="PWAqyKL0KLgL3Bw70K1qWt" Name="Refresh" Kind="InputPin" />
               <Pin Id="HAswv7YRce7Meawet97buB" Name="From" Kind="OutputPin" />
               <Pin Id="FlNc7r73laVPvfdcfMmOaH" Name="Subject" Kind="OutputPin" />
               <Pin Id="MEPZrsQi5oHMSctAYztsVx" Name="Body" Kind="OutputPin" />
@@ -163,7 +168,6 @@
             <ControlPoint Id="AAcMORAfxIzON5i7w8mi13" Bounds="760,292" />
             <ControlPoint Id="EVHcqHAmzpdN7R0LIaqHZ8" Bounds="842,292" />
             <ControlPoint Id="RwXZGQCz1k5MnvVQRV6EYW" Bounds="895,292" />
-            <ControlPoint Id="OiIEFQ1V5CDOjZPiVmbzFi" Bounds="1006,292" />
             <ControlPoint Id="Fn6p1kjOoXXQH4f7b1myz9" Bounds="317,365" />
             <ControlPoint Id="F8oHt3yx1cvPK2BCbYOaq3" Bounds="371,365" />
             <ControlPoint Id="SRdbVgd78TDM8nTeV7Nha8" Bounds="435,365" />
@@ -172,6 +176,7 @@
             <ControlPoint Id="SM3NUlyY6EqPmhQ0pxewDY" Bounds="709,365" />
             <ControlPoint Id="O2Yxw0esViwMiIuCn5NjCi" Bounds="775,365" />
             <ControlPoint Id="PgMf85sq8jTNrG5BJpOkFS" Bounds="828,365" />
+            <ControlPoint Id="KDQRXW3XAhZM0GLKa2q0xy" Bounds="1005,292" />
           </Canvas>
           <Patch Id="MR5OKcpqtRvP3SIzABCHka" Name="Create" />
           <Patch Id="HvkLBvjTFHPLAZDgTNPy9M" Name="Update">
@@ -193,7 +198,7 @@
             <Pin Id="M4JJFjy8uDuPyu0jJtCDcF" Name="Error Message" Kind="OutputPin" />
             <Pin Id="LgTpjDpPZ9pL0FIMyzt8Ls" Name="Filter" Kind="InputPin" />
             <Pin Id="AXUll4hJzYeNbYOVvK6XEd" Name="Ignore Filter Case" Kind="InputPin" />
-            <Pin Id="IWJeLgorgYXLuS8fn2H8Bs" Name="Update" Kind="InputPin" />
+            <Pin Id="VDCmVHijgzHMp53QDoKdgH" Name="Refresh" Kind="InputPin" Bounds="1005,294" />
           </Patch>
           <ProcessDefinition Id="Ht8wAwqs26kL5a4TbRpsgy">
             <Fragment Id="FJQR6yWHA7TOSRnXD6RHxx" Patch="MR5OKcpqtRvP3SIzABCHka" Enabled="true" />
@@ -219,8 +224,6 @@
           <Link Id="NV8f1CjhaA5MZBB15xS4Kw" Ids="EVHcqHAmzpdN7R0LIaqHZ8,GUtp2QNKXSIMzaesDkHLUX" />
           <Link Id="TWlBtOg3XXLL6v6Vs6TrQk" Ids="AXUll4hJzYeNbYOVvK6XEd,RwXZGQCz1k5MnvVQRV6EYW" IsHidden="true" />
           <Link Id="VxxzOCJnWgSP83JR0WuGWu" Ids="RwXZGQCz1k5MnvVQRV6EYW,E40wOgu849gLOGdnqeH4cm" />
-          <Link Id="Jchzyyr3EKYP5G3W6lZLr2" Ids="IWJeLgorgYXLuS8fn2H8Bs,OiIEFQ1V5CDOjZPiVmbzFi" IsHidden="true" />
-          <Link Id="CpE4i98o3UtLbWDEjZ6qpA" Ids="OiIEFQ1V5CDOjZPiVmbzFi,RK8ZgDOOeqbOchV7mDfjB2" />
           <Link Id="T9QlNJlC2fUNRJbuLBrudV" Ids="Fn6p1kjOoXXQH4f7b1myz9,MrrR3G5xlp8Mfq3LD1jVQw" IsHidden="true" />
           <Link Id="BFZ1M1SABufLIbaVFbXbOJ" Ids="HAswv7YRce7Meawet97buB,Fn6p1kjOoXXQH4f7b1myz9" />
           <Link Id="LKOhcZmNY8IMK19RzJp61v" Ids="F8oHt3yx1cvPK2BCbYOaq3,MnDIniO2QBbNuYtq66q9Fh" IsHidden="true" />
@@ -237,6 +240,8 @@
           <Link Id="JJiS1aeXZ0pLy1tzX8AlKM" Ids="MGVA28ErftDNxcBniRNB0v,O2Yxw0esViwMiIuCn5NjCi" />
           <Link Id="U85kKrbcak7Nat3vfhNRbO" Ids="PgMf85sq8jTNrG5BJpOkFS,M4JJFjy8uDuPyu0jJtCDcF" IsHidden="true" />
           <Link Id="KPXpXfmh7bXOyzsQ2Jk0yP" Ids="GhKkro1ykqNO08mU4C3ROV,PgMf85sq8jTNrG5BJpOkFS" />
+          <Link Id="K5Cnz1yzLcyMoRIhRHxyYI" Ids="KDQRXW3XAhZM0GLKa2q0xy,PWAqyKL0KLgL3Bw70K1qWt" />
+          <Link Id="Msz1WPR7U0KOpTu9HPpiyu" Ids="VDCmVHijgzHMp53QDoKdgH,KDQRXW3XAhZM0GLKa2q0xy" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -270,6 +275,7 @@
               <Pin Id="FSzaDQjtF8mNK0lZsBJ9yi" Name="Email Encoding" Kind="InputPin" />
               <Pin Id="TtM8om64yWPPNExqxHTtlz" Name="Accept HTML" Kind="InputPin" />
               <Pin Id="ICSvj9AEQOlLC0sZgfTMgK" Name="Attachments" Kind="InputPin" />
+              <Pin Id="EgV0mqZrzhGL7K3XT6I3Vo" Name="Embedded Images" Kind="InputPin" />
               <Pin Id="FrdfT51tOlOPcX3vrNOs2X" Name="Send" Kind="InputPin" />
               <Pin Id="JukBJh2E8nJQCPnGDzqZjY" Name="Success" Kind="OutputPin" />
               <Pin Id="TbigSfM7tlVN1Z6fSrkAID" Name="Error" Kind="OutputPin" />
@@ -287,10 +293,11 @@
             <ControlPoint Id="IzmD3b9RBleLynTwzkyJHN" Bounds="963,245" />
             <ControlPoint Id="VUEor5Upkt5NhgVXgnQVIx" Bounds="1064,245" />
             <ControlPoint Id="B0Zsg7P0RAMPYMYa6r4Lv8" Bounds="1156,245" />
-            <ControlPoint Id="OqtxgkL2h0zPrv71nE0liR" Bounds="1246,245" />
+            <ControlPoint Id="OqtxgkL2h0zPrv71nE0liR" Bounds="1351,245" />
             <ControlPoint Id="CZlHHmlvVTHLdxTNcpS6OS" Bounds="398,324" />
             <ControlPoint Id="UTwXBrIv4QiLhvyvudoKzN" Bounds="466,324" />
             <ControlPoint Id="RTdAscT0zzSOBA7wStbjc6" Bounds="521,324" />
+            <ControlPoint Id="E9U2nwJF6JQLfpelOjSPAy" Bounds="1241,245" />
           </Canvas>
           <Patch Id="JCAfWoPEVAkPJ4bhJYamZh" Name="Create" />
           <Patch Id="SLbKzWL0DuPLgep8Un9lFM" Name="Update">
@@ -310,6 +317,7 @@
             <Pin Id="AF2WBGxEdzJMcDGGFTIU2L" Name="Accept HTML" Kind="InputPin" />
             <Pin Id="CY5EkGnVPpOLdIwN0QbqNu" Name="Attachments" Kind="InputPin" />
             <Pin Id="VxnmgHTcjJbLnCqWD486mL" Name="Send" Kind="InputPin" />
+            <Pin Id="CDUf907ovYPPVBBMejjWRM" Name="Embedded Images" Kind="InputPin" Bounds="1252,247" />
           </Patch>
           <ProcessDefinition Id="PfQUlAE0AiyOyXBex7hP63">
             <Fragment Id="Lc7FCr1o9n4MQ10jOtGoYJ" Patch="JCAfWoPEVAkPJ4bhJYamZh" Enabled="true" />
@@ -347,6 +355,8 @@
           <Link Id="UQAtZljYgFBNf67wb4Ieqi" Ids="TbigSfM7tlVN1Z6fSrkAID,UTwXBrIv4QiLhvyvudoKzN" />
           <Link Id="Ab3pJldA67oP8AynRGPR7I" Ids="RTdAscT0zzSOBA7wStbjc6,M6XafY3ZleLOsGAtTwHDNU" IsHidden="true" />
           <Link Id="PS8nmAqmeu4PWKummxUILi" Ids="AIVmmWKQpoZNklkiDNkaHb,RTdAscT0zzSOBA7wStbjc6" />
+          <Link Id="DsAVW8FRwiFQDsgX1Vad5u" Ids="E9U2nwJF6JQLfpelOjSPAy,EgV0mqZrzhGL7K3XT6I3Vo" />
+          <Link Id="E35qV2jf4bsMObrignjxTT" Ids="CDUf907ovYPPVBBMejjWRM,E9U2nwJF6JQLfpelOjSPAy" IsHidden="true" />
         </Patch>
       </Node>
     </Canvas>

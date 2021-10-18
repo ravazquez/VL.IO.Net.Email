@@ -1,10 +1,10 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
-   <PATCH nodename="C:\libs.VL\VL.IO.Net.Email\vvvv\girlpower\SendEmail (help).v4p" systemname="SendEmal (help)" filename="C:\Users\Randall\Documents\Trabajo\YR\Email plugins\SendEmal (help).v4p" scrollx="0" scrolly="1245">
-   <BOUNDS type="Window" left="12750" top="510" width="15405" height="13440">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
+   <PATCH nodename="C:\libs.VL\VL.IO.Net.Email\vvvv\girlpower\SendEmail (help).v4p" systemname="SendEmal (help)" filename="C:\Users\Randall\Documents\Trabajo\YR\Email plugins\SendEmal (help).v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="12750" top="510" width="15400" height="13930">
    </BOUNDS>
    <PACK Name="dx11" Version="1.3.1">
    </PACK>
-   <PACK Name="addonpack" Version="38.1.0">
+   <PACK Name="addonpack" Version="42.0.0">
    </PACK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="38" systemname="IOBox (String)">
    <BOUNDS type="Box" left="611" top="299" width="1430" height="234">
@@ -25,9 +25,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="37" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1443" top="871" width="481" height="234">
+   <BOUNDS type="Box" left="1343" top="871" width="481" height="234">
    </BOUNDS>
-   <BOUNDS type="Node" left="1443" top="871" width="0" height="0">
+   <BOUNDS type="Node" left="1343" top="871" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="587">
    </PIN>
@@ -43,9 +43,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="36" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2262" top="871" width="1612" height="234">
+   <BOUNDS type="Box" left="2062" top="871" width="1612" height="234">
    </BOUNDS>
-   <BOUNDS type="Node" left="2262" top="871" width="0" height="0">
+   <BOUNDS type="Node" left="2062" top="871" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
@@ -61,9 +61,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="35" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="3120" top="1417" width="1469" height="234">
+   <BOUNDS type="Box" left="2770" top="1417" width="1469" height="234">
    </BOUNDS>
-   <BOUNDS type="Node" left="3120" top="1417" width="0" height="0">
+   <BOUNDS type="Node" left="2770" top="1417" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
@@ -79,9 +79,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="34" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3939" top="2015" width="480" height="480">
+   <BOUNDS type="Box" left="3509" top="2015" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3939" top="2015" width="0" height="0">
+   <BOUNDS type="Node" left="3509" top="2015" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -99,9 +99,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="33" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="4784" top="2015" width="1703" height="234">
+   <BOUNDS type="Box" left="4244" top="2015" width="1703" height="234">
    </BOUNDS>
-   <BOUNDS type="Node" left="4784" top="2015" width="0" height="0">
+   <BOUNDS type="Node" left="4244" top="2015" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
@@ -117,9 +117,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="32" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="5629" top="2626" width="1612" height="234">
+   <BOUNDS type="Box" left="4969" top="2626" width="1612" height="234">
    </BOUNDS>
-   <BOUNDS type="Node" left="5629" top="2626" width="0" height="0">
+   <BOUNDS type="Node" left="4969" top="2626" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="||">
    </PIN>
@@ -135,9 +135,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="31" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="6461" top="3224" width="2912" height="234">
+   <BOUNDS type="Box" left="5691" top="3224" width="2912" height="234">
    </BOUNDS>
-   <BOUNDS type="Node" left="6461" top="3224" width="0" height="0">
+   <BOUNDS type="Node" left="5691" top="3224" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="|This is a test email|">
    </PIN>
@@ -153,9 +153,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="30" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="7566" top="3848" width="3107" height="234">
+   <BOUNDS type="Box" left="6676" top="3848" width="3107" height="234">
    </BOUNDS>
-   <BOUNDS type="Node" left="7566" top="3848" width="0" height="0">
+   <BOUNDS type="Node" left="6676" top="3848" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="|The brown fox jumps over the lazy cat|">
    </PIN>
@@ -171,9 +171,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8955" top="8810" width="480" height="480">
+   <BOUNDS type="Box" left="7865" top="8810" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8955" top="8810" width="0" height="0">
+   <BOUNDS type="Node" left="7865" top="8810" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -193,9 +193,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="27" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="9828" top="9204" width="4056" height="481">
+   <BOUNDS type="Box" left="8600" top="9430" width="840" height="440">
    </BOUNDS>
-   <BOUNDS type="Node" left="9828" top="9204" width="0" height="0">
+   <BOUNDS type="Node" left="8600" top="9430" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="2" visible="1" values=",">
    </PIN>
@@ -207,7 +207,7 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="Filename">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Attachment">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Attachments">
    </PIN>
    <PIN pinname="Output String" visible="1">
    </PIN>
@@ -239,9 +239,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="43" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="8138" top="8203" width="1560" height="273">
+   <BOUNDS type="Box" left="7118" top="8203" width="1560" height="273">
    </BOUNDS>
-   <BOUNDS type="Node" left="8138" top="8203" width="0" height="0">
+   <BOUNDS type="Node" left="7118" top="8203" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="ANSI">
    </PIN>
@@ -257,9 +257,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="57">
-   <BOUNDS type="Node" left="7813" top="4407" width="100" height="100">
+   <BOUNDS type="Node" left="6943" top="4407" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="7813" top="4407" width="3237" height="3354">
+   <BOUNDS type="Box" left="6943" top="4407" width="3237" height="3354">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" values="|&lt;html&gt;&cr;&lf;    &lt;head&gt;&cr;&lf;        &lt;title&gt;Example message&lt;/title&gt;&cr;&lf;    &lt;/head&gt;&cr;&lf;    &lt;body&gt;&cr;&lf;        &lt;table&gt;&cr;&lf;            &lt;tr&gt;&cr;&lf;                &lt;td&gt;&cr;&lf;                    Text within a cell&cr;&lf;                &lt;/td&gt;&cr;&lf;            &lt;/tr&gt;&cr;&lf;        &lt;/table&gt;&cr;&lf;        &lt;p&gt;A paragraph&lt;/p&gt;&cr;&lf;        &lt;a href=&quot;http://vvvv.org&quot;&gt;a link&lt;/a&gt;&cr;&lf;    &lt;/body&gt;&cr;&lf;&lt;/html&gt;|">
    </PIN>
@@ -269,7 +269,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="59">
-   <BOUNDS type="Node" left="7306" top="9737" width="100" height="100">
+   <BOUNDS type="Node" left="6416" top="9737" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
@@ -283,9 +283,9 @@
    <LINK srcnodeid="57" srcpinname="Output String" dstnodeid="59" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="30" srcpinname="Output String" dstnodeid="59" dstpinname="Input 1" linkstyle="VHV">
-   <LINKPOINT x="7674" y="4173">
+   <LINKPOINT x="6784" y="4173">
    </LINKPOINT>
-   <LINKPOINT x="7510" y="4173">
+   <LINKPOINT x="6620" y="4173">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="59" dstpinname="Switch">
@@ -406,7 +406,7 @@
    </LINK>
    <LINK srcnodeid="69" srcpinname="Output" dstnodeid="68" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="SendEmail (Email)" filename="vl\VVVV.Email.VVVV.VL.Net.Email.vl" nodename="SendEmail (Email)" componentmode="Hidden" id="83">
+   <NODE id="83" systemname="SendEmail (Email)" filename="vl\VVVV.Email.VVVV.VL.Net.Email.vl" nodename="SendEmail (Email)" componentmode="Hidden">
    <BOUNDS type="Node" left="600" top="10710" width="10950" height="270">
    </BOUNDS>
    <PIN pinname="Success" visible="1">
@@ -442,6 +442,10 @@
    <PIN pinname="Accept HTML" visible="1">
    </PIN>
    <PIN pinname="Attachments Bin Size" visible="0" pintype="Input" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Embedded Images Bin Size" visible="0" pintype="Input" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Embedded Images" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="83" srcpinname="Success" dstnodeid="79" dstpinname="Y Input Value">
@@ -479,5 +483,29 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="83" dstpinname="Accept HTML">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="84">
+   <BOUNDS type="Box" left="10050" top="9430" width="1310" height="400">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10050" top="9430" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="2" visible="1" values=",">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Embedded Images|">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Output String" dstnodeid="83" dstpinname="Embedded Images">
    </LINK>
    </PATCH>
