@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="BqSraihE30pL9xjI1rCbIu" LanguageVersion="2021.4.0.526" Version="0.128">
-  <NugetDependency Id="VNWfpJD4u3tMALuHmDwjVz" Location="VL.CoreLib" Version="2021.4.0-0526-gd606d93626" />
+<Document xmlns:p="property" Id="BqSraihE30pL9xjI1rCbIu" LanguageVersion="2021.4.0.546" Version="0.128">
+  <NugetDependency Id="VNWfpJD4u3tMALuHmDwjVz" Location="VL.CoreLib" Version="2021.4.0-0546-g7cd1c1ebef" />
   <Patch Id="QEwkVa5QmK2LWibw6J5Zuf">
     <Canvas Id="SEMG1pZiFXJNnMFgVYUAC1" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="RHJp4ukqHB8QEevuGgxNZI">
         <Canvas Id="O4x4YJPzXLIOjLtSen2EmB" CanvasType="Group">
-          <Node Bounds="55,726,245,19" Id="AoLPoqrYOcYPjqZ12NpBLe">
+          <Node Bounds="55,786,265,19" Id="AoLPoqrYOcYPjqZ12NpBLe">
             <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.IO.Net.Email.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SendEmail" />
@@ -82,7 +82,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VHZX5oJ5vthMyRcdzflLsX" Comment="Send" Bounds="317,679,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="VHZX5oJ5vthMyRcdzflLsX" Comment="Send" Bounds="317,739,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -90,9 +90,9 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UezNBBCrvdWQJiltsWq37P" Comment="Error Message" Bounds="317,776,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="I25gZEx7MheMa1TioGvu6G" Comment="Error" Bounds="187,822,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="MKRrQRboigxMns79wTrBHD" Comment="Success" Bounds="57,822" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UezNBBCrvdWQJiltsWq37P" Comment="Error Message" Bounds="317,836,117,1" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="I25gZEx7MheMa1TioGvu6G" Comment="Error" Bounds="187,882,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MKRrQRboigxMns79wTrBHD" Comment="Success" Bounds="57,882,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="MAJJjWro8BrLMLeONcfsF0" Comment="Use SSL" Bounds="134,208,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
@@ -131,18 +131,20 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="IvK2Dy3wSCXMeizvsovLjF" Comment="Attachments" Bounds="548,635,205,17" ShowValueBox="true" isIOBox="true">
-            <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
-              <Choice Kind="TypeFlag" Name="Sequence" />
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
-                <TypeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <TypeReference>
                   <Choice Kind="TypeFlag" Name="String" />
                 </TypeReference>
               </p:TypeArguments>
             </p:TypeAnnotation>
-            <p:Value />
+            <p:Value>
+              <Item></Item>
+            </p:Value>
           </Pad>
-          <ControlPoint Id="SnB6zAryoHSL3UHaX6plyV" Bounds="276,644" />
-          <Pad Id="DqCVRBMtt4SN0Cg7QNVBIn" Bounds="541,694,158,19" ShowValueBox="true" isIOBox="true" Value="4. Send the message">
+          <ControlPoint Id="SnB6zAryoHSL3UHaX6plyV" Bounds="276,669" />
+          <Pad Id="DqCVRBMtt4SN0Cg7QNVBIn" Bounds="541,739,158,19" ShowValueBox="true" isIOBox="true" Value="4. Send the message">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -178,17 +180,19 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <ControlPoint Id="N6ULhnqu920M5xWtAm1WFq" Bounds="296,669" />
-          <Pad Id="Jlbszd4wO9sPzAgtK7H9tY" Comment="Embedded Images" Bounds="549,659,204,17" ShowValueBox="true" isIOBox="true">
+          <ControlPoint Id="N6ULhnqu920M5xWtAm1WFq" Bounds="296,722" />
+          <Pad Id="Jlbszd4wO9sPzAgtK7H9tY" Comment="Embedded Images" Bounds="549,689,204,17" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation>
-              <Choice Kind="TypeFlag" Name="Sequence" />
+              <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
                 <TypeReference>
                   <Choice Kind="TypeFlag" Name="String" />
                 </TypeReference>
               </p:TypeArguments>
             </p:TypeAnnotation>
-            <p:Value />
+            <p:Value>
+              <Item></Item>
+            </p:Value>
           </Pad>
         </Canvas>
         <Patch Id="MzazkElLMRAPTRNeyskF9B" Name="Create" />
@@ -216,7 +220,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="I7BawNKVYGiNq8fXGvEAAd" Location="VL.Skia" Version="2021.4.0-0526-gd606d93626" />
-  <NugetDependency Id="CYZlcj3on7WNDoAhxvnAx3" Location="VL.OpenCV" Version="1.0.0" />
+  <NugetDependency Id="I7BawNKVYGiNq8fXGvEAAd" Location="VL.Skia" Version="2021.4.0-0546-g7cd1c1ebef" />
+  <NugetDependency Id="CYZlcj3on7WNDoAhxvnAx3" Location="VL.OpenCV" Version="2.1.0" />
   <DocumentDependency Id="Hit5Jdbztu6PVm4NV94BIF" Location="../../../VL.IO.Net.Email.vl" />
 </Document>
