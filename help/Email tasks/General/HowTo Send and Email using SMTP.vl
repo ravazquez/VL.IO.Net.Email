@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="KbFsC218ljINvE7Vk24jJ5" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
-  <NugetDependency Id="VNWfpJD4u3tMALuHmDwjVz" Location="VL.CoreLib" Version="2019.1.0-273" />
+<Document xmlns:p="property" Id="BqSraihE30pL9xjI1rCbIu" LanguageVersion="2021.4.0.526" Version="0.128">
+  <NugetDependency Id="VNWfpJD4u3tMALuHmDwjVz" Location="VL.CoreLib" Version="2021.4.0-0526-gd606d93626" />
   <Patch Id="QEwkVa5QmK2LWibw6J5Zuf">
     <Canvas Id="SEMG1pZiFXJNnMFgVYUAC1" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -36,6 +36,7 @@
             <Pin Id="LHsP85v39TlN1KUFgvuXLd" Name="Email Encoding" Kind="InputPin" />
             <Pin Id="TSiP39mzrZgOtUX1qT7vX1" Name="Accept HTML" Kind="InputPin" />
             <Pin Id="U1UgHgoRCCRLUzseLHRoL8" Name="Attachments" Kind="InputPin" />
+            <Pin Id="KVjtgGJOHeEK93Hy8blkqf" Name="Embedded Images" Kind="InputPin" />
             <Pin Id="IWsoPhWKwUGQStybGnUgNy" Name="Send" Kind="InputPin" />
             <Pin Id="DvDV4PnhwziN1bSMpJKjSu" Name="Success" Kind="OutputPin" />
             <Pin Id="K2M1C24MaGTObGR8tp30uB" Name="Error" Kind="OutputPin" />
@@ -76,12 +77,12 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="GQ4UsYlNE7KP88cQeHGbU4" Comment="Message" Bounds="216,350,247,231" ShowValueBox="true" isIOBox="true" Value="&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;Example message&lt;/title&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;    &lt;body&gt;&#xD;&#xA;        &lt;table&gt;&#xD;&#xA;            &lt;tr&gt;&#xD;&#xA;                &lt;td&gt;&#xD;&#xA;                    Text within a cell&#xD;&#xA;                &lt;/td&gt;&#xD;&#xA;            &lt;/tr&gt;&#xD;&#xA;        &lt;/table&gt;&#xD;&#xA;        &lt;p&gt;A paragraph&lt;/p&gt;&#xD;&#xA;        &lt;a href=&quot;http://vvvv.org&quot;&gt;a link&lt;/a&gt;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;">
+          <Pad Id="GQ4UsYlNE7KP88cQeHGbU4" Comment="Message" Bounds="216,350,290,231" ShowValueBox="true" isIOBox="true" Value="&lt;html&gt;&#xD;&#xA;    &lt;head&gt;&#xD;&#xA;        &lt;title&gt;Example message&lt;/title&gt;&#xD;&#xA;    &lt;/head&gt;&#xD;&#xA;    &lt;body&gt;&#xD;&#xA;        &lt;table&gt;&#xD;&#xA;            &lt;tr&gt;&#xD;&#xA;                &lt;td&gt;&#xD;&#xA;                    Text within a cell&#xD;&#xA;                &lt;/td&gt;&#xD;&#xA;            &lt;/tr&gt;&#xD;&#xA;        &lt;/table&gt;&#xD;&#xA;        &lt;p&gt;A paragraph&lt;/p&gt;&#xD;&#xA;        &lt;img src=&quot;cid:image-00&quot; alt=&quot;an embedded image&quot;/&gt;&#xD;&#xA;        &lt;a href=&quot;http://vvvv.org&quot;&gt;a link&lt;/a&gt;&#xD;&#xA;    &lt;/body&gt;&#xD;&#xA;&lt;/html&gt;">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VHZX5oJ5vthMyRcdzflLsX" Comment="Send" Bounds="297,679,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="VHZX5oJ5vthMyRcdzflLsX" Comment="Send" Bounds="317,679,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -89,8 +90,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UezNBBCrvdWQJiltsWq37P" Comment="Error Message" Bounds="297,776" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="I25gZEx7MheMa1TioGvu6G" Comment="Error" Bounds="177,822" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UezNBBCrvdWQJiltsWq37P" Comment="Error Message" Bounds="317,776,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="I25gZEx7MheMa1TioGvu6G" Comment="Error" Bounds="187,822,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="MKRrQRboigxMns79wTrBHD" Comment="Success" Bounds="57,822" ShowValueBox="true" isIOBox="true" />
           <Pad Id="MAJJjWro8BrLMLeONcfsF0" Comment="Use SSL" Bounds="134,208,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -129,7 +130,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IvK2Dy3wSCXMeizvsovLjF" Comment="Attachments" Bounds="548,641,205,17" ShowValueBox="true" isIOBox="true">
+          <Pad Id="IvK2Dy3wSCXMeizvsovLjF" Comment="Attachments" Bounds="548,635,205,17" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="TypeFlag" Name="Sequence" />
               <p:TypeArguments>
@@ -140,8 +141,8 @@
             </p:TypeAnnotation>
             <p:Value />
           </Pad>
-          <ControlPoint Id="SnB6zAryoHSL3UHaX6plyV" Bounds="276,650" />
-          <Pad Id="DqCVRBMtt4SN0Cg7QNVBIn" Bounds="544,691,158,19" ShowValueBox="true" isIOBox="true" Value="4. Send the message">
+          <ControlPoint Id="SnB6zAryoHSL3UHaX6plyV" Bounds="276,644" />
+          <Pad Id="DqCVRBMtt4SN0Cg7QNVBIn" Bounds="541,694,158,19" ShowValueBox="true" isIOBox="true" Value="4. Send the message">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -150,7 +151,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="I5Ck4tmBw1BMVimdg8ILWJ" Bounds="95,877,523,60" ShowValueBox="true" isIOBox="true" Value="5. Check the status output pins to determine if the email was sent sucessfully or an error was found, the Error Message output pin should provide more information in case of an error.">
+          <Pad Id="I5Ck4tmBw1BMVimdg8ILWJ" Bounds="541,877,523,60" ShowValueBox="true" isIOBox="true" Value="5. Check the status output pins to determine if the email was sent sucessfully or an error was found, the Error Message output pin should provide more information in case of an error.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -167,6 +168,27 @@
               <p:fontsize p:Type="Int32">14</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CXm5f526hpqNzp2Ak9Z9mk" Bounds="982,479,532,340" ShowValueBox="true" isIOBox="true" Value="NOTE: &#xD;&#xA;&#xD;&#xA;Embedded images allow the use of images inside the message's HTML content.&#xD;&#xA;&#xD;&#xA;In order to use an embedded image you must reference it by using it's Content-ID or &quot;cid&quot;. Content-IDs are automatically assigned by the SendEmail node based on the order of the images passed into the Embedded Images spread input, starting from 00 and counting up to a maximum of 99, and preceded by the &quot;image-&quot; prefix. In the end if you pass in three images for example, their respective CIDs will be:&#xD;&#xA;&#xD;&#xA;image-00&#xD;&#xA;image-01&#xD;&#xA;image-02&#xD;&#xA;&#xD;&#xA;You can use them in your message's HTML like so:&#xD;&#xA;&#xD;&#xA;&lt;img src=&quot;cid:image-00&quot;/&gt;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <ControlPoint Id="N6ULhnqu920M5xWtAm1WFq" Bounds="296,669" />
+          <Pad Id="Jlbszd4wO9sPzAgtK7H9tY" Comment="Embedded Images" Bounds="549,659,204,17" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="Sequence" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:Value />
           </Pad>
         </Canvas>
         <Patch Id="MzazkElLMRAPTRNeyskF9B" Name="Create" />
@@ -190,10 +212,11 @@
         <Link Id="K9hCBe5nVyHPf8GHnXn4Rq" Ids="MAJJjWro8BrLMLeONcfsF0,Bjn2TkoHEj9QG3jHGTLmYc" />
         <Link Id="EHoHoeg7PEzP6R84LXWgYv" Ids="P1so7W6t6hoPIlNla58glO,TSiP39mzrZgOtUX1qT7vX1" />
         <Link Id="H5MvZ4wUTP6LapUzWBeDpF" Ids="IvK2Dy3wSCXMeizvsovLjF,SnB6zAryoHSL3UHaX6plyV,U1UgHgoRCCRLUzseLHRoL8" />
+        <Link Id="HU0Yji20TwjPsTwlQsQVbb" Ids="Jlbszd4wO9sPzAgtK7H9tY,N6ULhnqu920M5xWtAm1WFq,KVjtgGJOHeEK93Hy8blkqf" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="I7BawNKVYGiNq8fXGvEAAd" Location="VL.Skia" Version="2019.1.0-0242-gf587b4c0f7" />
-  <NugetDependency Id="CYZlcj3on7WNDoAhxvnAx3" Location="VL.OpenCV" Version="0.0.0.0" />
+  <NugetDependency Id="I7BawNKVYGiNq8fXGvEAAd" Location="VL.Skia" Version="2021.4.0-0526-gd606d93626" />
+  <NugetDependency Id="CYZlcj3on7WNDoAhxvnAx3" Location="VL.OpenCV" Version="1.0.0" />
   <DocumentDependency Id="Hit5Jdbztu6PVm4NV94BIF" Location="../../../VL.IO.Net.Email.vl" />
 </Document>

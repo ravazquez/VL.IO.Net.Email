@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="KbFsC218ljINvE7Vk24jJ5" LanguageVersion="2019.1.0-0417-g808f072318" Version="0.128">
-  <NugetDependency Id="VNWfpJD4u3tMALuHmDwjVz" Location="VL.CoreLib" Version="2019.1.0-273" />
+<Document xmlns:p="property" Id="KbFsC218ljINvE7Vk24jJ5" LanguageVersion="2021.4.0.526" Version="0.128">
+  <NugetDependency Id="VNWfpJD4u3tMALuHmDwjVz" Location="VL.CoreLib" Version="2021.4.0-0526-gd606d93626" />
   <Patch Id="QEwkVa5QmK2LWibw6J5Zuf">
     <Canvas Id="SEMG1pZiFXJNnMFgVYUAC1" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,25 +15,27 @@
       </p:NodeReference>
       <Patch Id="RHJp4ukqHB8QEevuGgxNZI">
         <Canvas Id="O4x4YJPzXLIOjLtSen2EmB" CanvasType="Group">
-          <Node Bounds="67,396,185,19" Id="NRTHEZzOkCVPeLO47DiT9t">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.IO.Net.Email.vl">
+          <Node Bounds="67,396,132,19" Id="NRTHEZzOkCVPeLO47DiT9t">
+            <p:NodeReference LastCategoryFullName="IO.Net.Email" LastSymbolSource="VL.IO.Net.Email.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ListEmails" />
+              <Choice Kind="ProcessAppFlag" Name="ListEmails (POP3)" />
             </p:NodeReference>
             <Pin Id="MHlOgryl1kkLUVWvT5kuvd" Name="Host" Kind="InputPin" />
             <Pin Id="P9I0pA7xTXBPzTEszAuUDu" Name="Port" Kind="InputPin" />
-            <Pin Id="BPRFqAI9dZwM7eyCDhxGPR" Name="Options" Kind="InputPin" />
+            <Pin Id="BPRFqAI9dZwM7eyCDhxGPR" Name="Options" Kind="InputPin" DefaultValue="Auto" />
             <Pin Id="VpQ7MM0qZxcNqmpZPFmfOl" Name="User Name" Kind="InputPin" />
             <Pin Id="HgpolalYqx2LXrnbvs31ln" Name="Password" Kind="InputPin" />
             <Pin Id="V23zeXtlTVlNgAdBUCYdYt" Name="Count" Kind="InputPin" />
             <Pin Id="VjzkySG3mXxLoRTWnXpadS" Name="Filter By" Kind="InputPin" />
             <Pin Id="LZGc4QZhFwGMQgAikr4y7P" Name="Filter Value" Kind="InputPin" />
             <Pin Id="J71tvCEosXDPq1A1XYw4aF" Name="Filter" Kind="InputPin" />
-            <Pin Id="HNSu67w3tRTPbbwQzjF07g" Name="Update" Kind="InputPin" />
+            <Pin Id="Hnqrlb6PrU2QLXqPRBB6Ri" Name="Ignore Filter Case" Kind="InputPin" />
+            <Pin Id="GHeejbzZASqNpUKX7s1A47" Name="Refresh" Kind="InputPin" />
             <Pin Id="RTPl91gLe53MEwaK8cLrGN" Name="From" Kind="OutputPin" />
             <Pin Id="Ou4Tn0eCpQ0NCLYFeILoCo" Name="Subject" Kind="OutputPin" />
             <Pin Id="C9PCLdPQHjgPasrlAi8c16" Name="Body" Kind="OutputPin" />
-            <Pin Id="NDfkEtnKQWzO4YgoKwDvDC" Name="Attachments" Kind="OutputPin" />
+            <Pin Id="OBPd8ZgEpaeLlSqSwIcJRw" Name="Attached Images" Kind="OutputPin" />
+            <Pin Id="NHXuOTQ4T0INLxqzf4W4nu" Name="Embedded Images" Kind="OutputPin" />
             <Pin Id="RF4hN4bkeKROPTODUXcu6H" Name="Success" Kind="OutputPin" />
             <Pin Id="CrKDR1Hpn3SNx3p4BeW7eL" Name="Error" Kind="OutputPin" />
             <Pin Id="PszdsY2CuPfO3x5HZ74oC0" Name="Error Message" Kind="OutputPin" />
@@ -78,7 +80,7 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Ptk4epji1D8QQLeV6ubMCN" Comment="Update" Bounds="249,344,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Ptk4epji1D8QQLeV6ubMCN" Comment="Refresh" Bounds="269,344,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -86,8 +88,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HmI86KrqSNyN1cugWNi07F" Comment="From" Bounds="67,730" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="JovsjO0EQH5OU3nG8dgeOp" Comment="Subject" Bounds="98,605" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HmI86KrqSNyN1cugWNi07F" Comment="From" Bounds="67,745,230,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JovsjO0EQH5OU3nG8dgeOp" Comment="Subject" Bounds="98,605,290,47" ShowValueBox="true" isIOBox="true" />
           <Pad Id="JBHfNEjnlnLMeILwruymJi" Comment="Success" Bounds="188,511,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="SdAiPeAeCVYOgr2ps8HATa" Comment="Error" Bounds="289,511,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="GxZEydM3gYPLQGsp0BPDJI" Comment="Error Message" Bounds="401,511,267,10" ShowValueBox="true" isIOBox="true" />
@@ -118,7 +120,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Nl9AsnV6LORPuyf7DaCmdH" Bounds="402,349,431,63" ShowValueBox="true" isIOBox="true" Value="4. Click Update and wait for your server to respond (this could take some time depending on your server, your connection speed and the amount of messages specified in Count)">
+          <Pad Id="Nl9AsnV6LORPuyf7DaCmdH" Bounds="402,349,431,63" ShowValueBox="true" isIOBox="true" Value="4. Click Refresh and wait for your server to respond (this could take some time depending on your server, your connection speed and the amount of messages specified in Count)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -127,7 +129,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Lt5Cv1daEdSQSFPhInxCIU" Bounds="101,777,523,60" ShowValueBox="true" isIOBox="true" Value="5. Check the status output pins to determine if the request was sucessfull or an error was found, the Error Message output pin should provide more information in case of an error. Only Image attachments are currently supported.">
+          <Pad Id="Lt5Cv1daEdSQSFPhInxCIU" Bounds="402,742,523,60" ShowValueBox="true" isIOBox="true" Value="5. Check the status output pins to determine if the request was successful or an error was found. The Error Message output pin should provide more information in case of an error. Only Image attachments are currently supported.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -160,16 +162,16 @@
         <Link Id="DNdtSm3S0BhNLb3ecb0ffV" Ids="LgozK5LYyG7MLPIqk4rPWu,VjzkySG3mXxLoRTWnXpadS" />
         <Link Id="DCy0VmUcQEsOYpPCvrc2zT" Ids="FxtVcmeIm3COJM8LYzhrLO,LZGc4QZhFwGMQgAikr4y7P" />
         <Link Id="CBhFHZhmtGdM02cWajFWWf" Ids="BK9tlcdybqrM0U9wAVllYy,J71tvCEosXDPq1A1XYw4aF" />
-        <Link Id="Ndx6niJI8bBPjbVh5bYa6F" Ids="Ptk4epji1D8QQLeV6ubMCN,HNSu67w3tRTPbbwQzjF07g" />
         <Link Id="Umk8AcsnbsvM8EOJsiQY1R" Ids="RTPl91gLe53MEwaK8cLrGN,HmI86KrqSNyN1cugWNi07F" />
         <Link Id="RUrMXNgBlbTLsm96uosL7N" Ids="Ou4Tn0eCpQ0NCLYFeILoCo,JovsjO0EQH5OU3nG8dgeOp" />
         <Link Id="AsCGcTRTQ9lOxNIybQqWoZ" Ids="RF4hN4bkeKROPTODUXcu6H,JBHfNEjnlnLMeILwruymJi" />
         <Link Id="KmiwpUqcRfJL3fnPHCYplo" Ids="CrKDR1Hpn3SNx3p4BeW7eL,SdAiPeAeCVYOgr2ps8HATa" />
         <Link Id="B0fgaAEjYh6PkYRwg4M00W" Ids="PszdsY2CuPfO3x5HZ74oC0,GxZEydM3gYPLQGsp0BPDJI" />
+        <Link Id="Mlmzm1MiZDZLbuP1RTk7c7" Ids="Ptk4epji1D8QQLeV6ubMCN,GHeejbzZASqNpUKX7s1A47" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="I7BawNKVYGiNq8fXGvEAAd" Location="VL.Skia" Version="2019.1.0-0242-gf587b4c0f7" />
-  <NugetDependency Id="CYZlcj3on7WNDoAhxvnAx3" Location="VL.OpenCV" Version="0.0.0.0" />
+  <NugetDependency Id="I7BawNKVYGiNq8fXGvEAAd" Location="VL.Skia" Version="2021.4.0-0526-gd606d93626" />
+  <NugetDependency Id="CYZlcj3on7WNDoAhxvnAx3" Location="VL.OpenCV" Version="1.0.0" />
   <DocumentDependency Id="GEj50OlDRhVNsouMOpGgc0" Location="../../../VL.IO.Net.Email.vl" />
 </Document>
