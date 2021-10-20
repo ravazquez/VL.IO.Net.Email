@@ -8,17 +8,17 @@ ListEmails uses [MailKit and MimeKit](http://www.mimekit.net/) and currently sup
 ListEmails assumes all attachments are image attachments and tries to parse their content as such.
 
 ## Using the library
-In order to use this library with vl you have to clone this repository and build the Visual Studio 21017 solution as described below.
+Go to vvvv gamma's quad menu/manage nugets/command-line and type
 
-After building you can just reference "X:\libs.VL\VL.Net.IO.Email\VL.Net.IO.Email.vl" in your VL document and use the nodes.
+```
+nuget install VL.IO.Net.Email
+```
 
-VL help patches can be found here:
+Open the help browser (<kbd>F1</kbd>) and look for Email, you'll find two basic help patches showing how to use the nodeset.
 
-    "X:\libs.VL\VL.Net.IO.Email\help\Email tasks\"
+vvvv beta help patches can be found here:
 
-vvvv demo patches can be found here:
-
-    "X:\libs.VL\VL.Net.IO.Email\vvvv\girlpower\"
+    X:\libs.VL\VL.Net.IO.Email\vvvv\girlpower\
 
 ### Cloning the repository
 If you want to contribute to this repository, clone it into a directory like:
@@ -30,4 +30,4 @@ Open
 
     X:\vl-libs\VL.Net.IO.Email\src\VL.Net.IO.Email.sln
     
-in VisualStudio 2017 and build it. This is necessary for a few things that cannot yet be expressed in vl directly, like enums. 
+in VisualStudio 2019 and build it. This is necessary for a few things that cannot yet be expressed in vl directly, like enums. 
