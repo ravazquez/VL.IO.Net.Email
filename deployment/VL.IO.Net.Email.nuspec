@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.Net.Email</id>
-    <version>1.3.0</version>
+    <version>1.3.1</version>
     <title>VL.IO.Net.Email</title>
     <authors>Randall Vásquez</authors>
     <owners>Randall Vásquez</owners>
