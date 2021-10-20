@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>C:\libs.VL\VL.IO.Net.Email\lib\</OutputPath>
+    <OutputPath>..\lib\</OutputPath>
   </PropertyGroup>
 
 </Project>
