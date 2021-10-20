@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Cr4RfERcIRcNPpX8tIC6Pg" LanguageVersion="2021.4.0.526" Version="0.128">
-  <NugetDependency Id="EzqiUxfrd3RMePeDPWTvqB" Location="VL.CoreLib" Version="2021.4.0-0526-gd606d93626" />
+<Document xmlns:p="property" Id="B6gk6RNVoM4OzFiRt6k3gN" LanguageVersion="2021.4.0.546" Version="0.128">
+  <NugetDependency Id="EzqiUxfrd3RMePeDPWTvqB" Location="VL.CoreLib" Version="2021.4.0-0546-g7cd1c1ebef" />
   <Patch Id="MQWEcwOMqIoNUWLY4fL0SW">
     <Canvas Id="LBTMKaAgO02M0lGlQJhTsv" DefaultCategory="IO.Net.Email" CanvasType="FullCategory">
       <!--
@@ -823,8 +823,26 @@
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="CexGmm6sXUPMVuG2gQi9mo" Name="Attachments" Kind="InputPin" Bounds="602,178" />
-            <Pin Id="JXCULQHJ2GQOsNLW0dVXTi" Name="Embedded Images" Kind="InputPin" />
+            <Pin Id="CexGmm6sXUPMVuG2gQi9mo" Name="Attachments" Kind="InputPin" Bounds="602,178">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="JXCULQHJ2GQOsNLW0dVXTi" Name="Embedded Images" Kind="InputPin">
+              <p:TypeAnnotation>
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference>
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="FopkjXLiDf2OniAhorGyXO" Name="Send" Kind="InputPin" Bounds="277,593" DefaultValue="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
